@@ -1,0 +1,192 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Work+Sans:wght@200;300;400;500&display=swap");
+
+@font-face {
+	font-family: "Taken by Vultures";
+	src: url("../fonts/Taken\ by\ Vultures\ Alternates\ Demo.otf")
+			format("truetype"),
+		url("../fonts/Taken\ by\ Vultures\ Demo.otf") format("otf");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 16px;
+	padding: 2rem;
+}
+
+#certificate-wrap {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	background: #a28484;
+	mix-blend-mode: overlay;
+	height: 100vh;
+	width: 94vw;
+	min-height: 720px;
+	min-width: 1200px;
+	background-image: url("../img/Certificate\ Background.png");
+	background-position: center;
+	background-size: cover;
+	box-shadow: 2px 1px 8px 2px #000000;
+}
+
+#certificate-wrap #sidebar {
+	background-color: #00aeff;
+	width: 2.5rem;
+}
+
+#certificate-wrap #certificate-content {
+	padding: 4rem;
+	padding-left: 6.5rem;
+	row-gap: 4rem;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+}
+
+#header-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+#header-wrap .sponsors-group {
+	display: flex;
+	column-gap: 1rem;
+	height: 100%;
+	align-items: flex-end;
+}
+
+img.logo {
+	width: 12%;
+	height: 80%;
+}
+
+img:last-child {
+	width: 14%;
+}
+
+#certificate-verify {
+	font-family: "Raleway" sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.8rem;
+	width: 100%;
+	color: #000000;
+	line-height: 0.9rem;
+	opacity: 0.5;
+	align-self: center;
+}
+
+#certificate-verify a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000000;
+}
+
+#main-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	row-gap: 4rem;
+}
+
+#certificate-name h1 {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+
+	color: #000000;
+	text-transform: capitalize;
+}
+
+#recipient-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	row-gap: 2rem;
+}
+
+#recipient-name {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+#certificate-reason p {
+	width: 50%;
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+}
+
+#certificate-reason span {
+	font-weight: bold;
+}
+
+#recipient-stage {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.9rem;
+	line-height: 0.9rem;
+
+	/* identical to box height, or 100% */
+
+	color: #00aeff;
+}
+
+#certificate-signatory {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/* row-gap: 0.6rem; */
+}
+
+#signature {
+	font-family: "Taken by Vultures", Fallback, cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4rem;
+	line-height: 5rem;
+
+	/* identical to box height */
+	letter-spacing: -0.03em;
+
+	color: #9d9d9d;
+}
+
+#signatory-name h4 {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+
+	/* identical to box height */
+
+	color: #000000;
+}
+
+#signatory-title h5 {
+	font-family: "Work Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1rem;
+
+	color: #000000;
+}
