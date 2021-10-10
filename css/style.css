@@ -18,8 +18,15 @@
 body {
 	margin: 0 auto;
 	font-size: 16px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	/* padding: 2rem; */
+}
+
+#wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #certificate-wrap {
@@ -30,7 +37,7 @@ body {
 	mix-blend-mode: overlay;
 	height: 100vh;
 	/* width: 94vw; */
-	min-height: 720px;
+	max-height: 720px;
 	/* min-width: 1200px; */
 	background-image: url("../img/Certificate\ Background.png");
 	background-position: center;
@@ -50,7 +57,7 @@ body {
 	padding: 4rem;
 	padding-left: 6.5rem;
 	row-gap: 6rem;
-	/* justify-content: space-around; */
+	justify-content: space-around;
 
 	display: flex;
 	flex-direction: column;
@@ -105,7 +112,7 @@ img:last-child {
 #main-wrap {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-self: flex-end;
 	row-gap: 2rem;
 }
@@ -163,7 +170,7 @@ img:last-child {
 #certificate-signatory {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: flex-end;
 	/* row-gap: 0.6rem; */
 }
 
@@ -202,6 +209,20 @@ img:last-child {
 	color: #000000;
 }
 
+@media screen and (min-height: 720px) {
+	#certificate-wrap {
+		position: absolute;
+		top: 50%;
+		margin-top: -360px;
+	}
+}
+
+@media screen and (max-width: 1160px) {
+	#certificate-verify {
+		font-size: 0.75rem;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	#certificate-reason p {
 		width: 75%;
@@ -215,6 +236,10 @@ img:last-child {
 		row-gap: 6.4rem;
 		padding-left: 2.4rem;
 	}
+
+	#header-wrap {
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -222,14 +247,6 @@ img:last-child {
 		padding: 4rem 2rem;
 		row-gap: 3.2rem;
 		padding-left: 2.4rem;
-	}
-
-	#header-wrap {
-		flex-wrap: wrap;
-	}
-
-	#certificate-verify {
-		font-size: 0.7rem;
 	}
 
 	#certificate-name h1 {
