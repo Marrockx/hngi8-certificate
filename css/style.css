@@ -35,9 +35,9 @@ body {
 	flex-direction: row;
 	background: #a28484;
 	mix-blend-mode: overlay;
-	/* height: 100vh; */
+	height: 100vh;
 	/* width: 94vw; */
-	max-height: 720px;
+	min-height: 720px;
 	/* min-width: 1200px; */
 	background-image: url("../img/Certificate\ Background.png");
 	background-position: center;
