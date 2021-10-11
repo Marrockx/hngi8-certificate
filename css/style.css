@@ -21,23 +21,29 @@ body {
 	/* overflow: hidden; */
 	/* padding: 2rem; */
 }
-
+/* 
 #wrap {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
+} */
 
 #certificate-wrap {
-	margin: 0 auto;
+	position: absolute;
+	left: 5vw;
+	right: 5vw;
+	top: 5vh;
+	bottom: 5vh;
+	margin: auto;
+	vertical-align: middle;
 	display: flex;
 	flex-direction: row;
 	background: #a28484;
 	mix-blend-mode: overlay;
-	height: 100vh;
-	/* width: 94vw; */
-	min-height: 720px;
+	height: 90vh;
+	width: 90vw;
+	/* min-height: 720px; */
 	/* min-width: 1200px; */
 	background-image: url("../img/Certificate\ Background.png");
 	background-position: center;
@@ -56,7 +62,7 @@ body {
 	margin: 0 auto;
 	padding: 4.6rem;
 	padding-left: 6.5rem;
-	row-gap: 6rem;
+	row-gap: 4rem;
 	justify-content: space-around;
 
 	display: flex;
@@ -170,7 +176,7 @@ img:last-child {
 #certificate-signatory {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
 	/* row-gap: 0.6rem; */
 }
 
@@ -223,6 +229,9 @@ img:last-child {
 }
 
 @media screen and (max-width: 900px) {
+	#certificate-wrap #certificate-content {
+		row-gap: 4rem;
+	}
 	#certificate-reason p {
 		width: 75%;
 		font-size: 0.85rem;
@@ -232,19 +241,24 @@ img:last-child {
 	#certificate-wrap #certificate-content {
 		padding: 3.8rem;
 		padding-left: 4.8rem;
-		row-gap: 6.4rem;
+		row-gap: 3.2rem;
 		padding-left: 2.4rem;
 	}
 
 	#header-wrap {
 		flex-wrap: wrap;
 	}
+	#recipient-stage {
+		font-size: 0.8rem;
+		width: 75%;
+		line-height: 1.2rem;
+	}
 }
 
 @media screen and (max-width: 600px) {
 	#certificate-wrap #certificate-content {
 		padding: 4rem 2rem;
-		row-gap: 3.2rem;
+		row-gap: 2rem;
 		padding-left: 2.4rem;
 	}
 
